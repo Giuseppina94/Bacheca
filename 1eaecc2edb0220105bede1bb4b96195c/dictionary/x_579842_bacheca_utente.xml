@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Utente" max_length="40" name="x_579842_bacheca_utente" sizeclass="0" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Codice fiscale" max_length="16" name="codice_fiscale" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Cognome utente" mandatory="true" max_length="40" name="cognome_utente" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Data di nascita" max_length="40" name="data_di_nascita" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Indirizzo mail" mandatory="true" max_length="40" name="indirizzo_mail" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Luogo di nascita" max_length="40" name="luogo_di_nascita" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Luogo di residenza" max_length="40" name="luogo_di_residenza" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Nome utente" mandatory="true" max_length="40" name="nome_utente" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="ID utente" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="Numero di telefono" max_length="40" name="numero_di_telefono" type="phone_number_e164"/>
+        <element attributes="edge_encryption_enabled=true" label="Azienda" max_length="40" name="u_azienda" type="string"/>
+        <element label="Impiegato" max_length="40" name="u_impiegato" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Sesso" max_length="40" name="u_sesso" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Maschio" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Femmina" sequence="1" value="2"/>
+            </choice>
+        </element>
+    </element>
+</database>

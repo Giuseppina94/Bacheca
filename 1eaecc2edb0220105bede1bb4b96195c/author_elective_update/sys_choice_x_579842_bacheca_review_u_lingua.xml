@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_lingua" table="x_579842_bacheca_review" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_lingua</element>
+            <name>x_579842_bacheca_review</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-02-03 11:22:16</sys_created_on>
+            <sys_id>ac50f4a6db8220105bede1bb4b961953</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_lingua</sys_name>
+            <sys_package display_value="Bacheca" source="x_579842_bacheca">1eaecc2edb0220105bede1bb4b96195c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Bacheca">1eaecc2edb0220105bede1bb4b96195c</sys_scope>
+            <sys_update_name>sys_choice_x_579842_bacheca_review_u_lingua</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-02-03 11:22:16</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_lingua</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Italiano</label>
+            <language>en</language>
+            <name>x_579842_bacheca_review</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-02-03 11:22:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6450f4a6db8220105bede1bb4b961953</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-02-03 11:22:16</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_lingua</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>English</label>
+            <language>en</language>
+            <name>x_579842_bacheca_review</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-02-03 11:22:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a050f4a6db8220105bede1bb4b961955</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-02-03 11:22:16</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_lingua</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Francaise</label>
+            <language>en</language>
+            <name>x_579842_bacheca_review</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-02-03 11:22:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2450f4a6db8220105bede1bb4b961956</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-02-03 11:22:16</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_lingua</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Altra</label>
+            <language>en</language>
+            <name>x_579842_bacheca_review</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-02-03 11:22:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a450f4a6db8220105bede1bb4b961957</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-02-03 11:22:16</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

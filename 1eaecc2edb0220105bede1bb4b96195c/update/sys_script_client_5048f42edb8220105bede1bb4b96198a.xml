@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>u_annuncio</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Commento:Popola campo mail organizzatore</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+	
+var getEmail3 = new GlideAjax('getEmailAddressCeR');
+ 
+getEmail3.addParam('sysparm_name','getEmail2');
+ 
+getEmail3.addParam('sysparm_number',g_form.getValue('u_annuncio'));
+
+getEmail3.getXML(populateMail_Field); 
+    
+function populateMail_Field(response){ 
+  
+var mailFromScriptInclude = response.responseXML.documentElement.getAttribute("answer"); 
+    
+		  g_form.clearValue('u_mail_organizzatore');
+		  g_form.setValue('u_mail_organizzatore', mailFromScriptInclude);
+	}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-02-03 11:57:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5048f42edb8220105bede1bb4b96198a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Commento:Popola campo mail organizzatore</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Bacheca" source="x_579842_bacheca">1eaecc2edb0220105bede1bb4b96195c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bacheca">1eaecc2edb0220105bede1bb4b96195c</sys_scope>
+        <sys_update_name>sys_script_client_5048f42edb8220105bede1bb4b96198a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-02-03 11:57:27</sys_updated_on>
+        <table>x_579842_bacheca_commento</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

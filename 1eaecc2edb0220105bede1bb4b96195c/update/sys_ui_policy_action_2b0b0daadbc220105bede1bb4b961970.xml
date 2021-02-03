@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>u_loc_weekend</field>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-02-03 13:19:20</sys_created_on>
+        <sys_id>2b0b0daadbc220105bede1bb4b961970</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_loc_weekend</sys_name>
+        <sys_package display_value="Bacheca" source="x_579842_bacheca">1eaecc2edb0220105bede1bb4b96195c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bacheca">1eaecc2edb0220105bede1bb4b96195c</sys_scope>
+        <sys_update_name>sys_ui_policy_action_2b0b0daadbc220105bede1bb4b961970</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-02-03 13:19:20</sys_updated_on>
+        <table>x_579842_bacheca_annuncio</table>
+        <ui_policy display_value="Mostra/nascondi località weekend">3dda49aadbc220105bede1bb4b961992</ui_policy>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+</record_update>

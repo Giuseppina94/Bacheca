@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Commento" max_length="40" name="x_579842_bacheca_commento" sizeclass="0" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="ID commento" max_length="40" name="number" read_only="true" type="string"/>
+        <element attributes="encode_utf8=false" label="Annuncio" max_length="32" name="u_annuncio" reference="x_579842_bacheca_annuncio" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Cognome utente" max_length="40" name="u_cognome_utente" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Data del commento" mandatory="true" max_length="40" name="u_data_commento" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Mail organizzatore annuncio" max_length="40" name="u_mail_organizzatore" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Nome utente" max_length="40" name="u_nome_utente" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="New String" max_length="40" name="u_string_2" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Suggerimenti" max_length="40" name="u_suggerimenti" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Testo del commento" max_length="40" name="u_testo" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Titolo del commento" max_length="40" name="u_titolo" type="string"/>
+        <element attributes="encode_utf8=false" label="Utente" max_length="32" name="u_utente" reference="x_579842_bacheca_utente" type="reference"/>
+        <index name="index">
+            <element name="u_utente"/>
+        </index>
+        <index name="index2">
+            <element name="u_annuncio"/>
+        </index>
+    </element>
+</database>

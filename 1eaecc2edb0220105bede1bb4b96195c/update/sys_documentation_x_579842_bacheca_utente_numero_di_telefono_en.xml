@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="numero_di_telefono" label="Numero di telefono" language="en" table="x_579842_bacheca_utente">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>numero_di_telefono</element>
+            <help/>
+            <hint/>
+            <label>Numero di telefono</label>
+            <language>en</language>
+            <name>x_579842_bacheca_utente</name>
+            <plural>Numero di telefonos</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-02-03 09:24:36</sys_created_on>
+            <sys_id>cd659c62db4220105bede1bb4b9619ed</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Numero di telefono</sys_name>
+            <sys_package display_value="Bacheca" source="x_579842_bacheca">1eaecc2edb0220105bede1bb4b96195c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Bacheca">1eaecc2edb0220105bede1bb4b96195c</sys_scope>
+            <sys_update_name>sys_documentation_x_579842_bacheca_utente_numero_di_telefono_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-02-03 09:24:36</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

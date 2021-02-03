@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_data_policy_rule">
+    <sys_data_policy_rule action="INSERT_OR_UPDATE">
+        <disabled>ignore</disabled>
+        <field>tipologia_annuncio</field>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_data_policy_rule</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-02-03 08:58:53</sys_created_on>
+        <sys_data_policy display_value="Sets the Tipologia annuncio field to mandatory">988f486edb0220105bede1bb4b9619b2</sys_data_policy>
+        <sys_id>dc8f486edb0220105bede1bb4b9619b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>tipologia_annuncio</sys_name>
+        <sys_package display_value="Bacheca" source="x_579842_bacheca">1eaecc2edb0220105bede1bb4b96195c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bacheca">1eaecc2edb0220105bede1bb4b96195c</sys_scope>
+        <sys_update_name>sys_data_policy_rule_dc8f486edb0220105bede1bb4b9619b5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-02-03 08:58:53</sys_updated_on>
+        <table>x_579842_bacheca_annuncio</table>
+    </sys_data_policy_rule>
+</record_update>

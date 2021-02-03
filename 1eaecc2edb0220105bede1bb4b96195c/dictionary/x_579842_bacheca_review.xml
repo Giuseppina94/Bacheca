@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Review" max_length="40" name="x_579842_bacheca_review" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="ID review" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Altra lingua" max_length="40" name="u_altra_lingua" type="string"/>
+        <element attributes="encode_utf8=false" label="ID annuncio" max_length="32" name="u_annuncio" reference="x_579842_bacheca_annuncio" type="reference"/>
+        <element label="Rispetta le aspettative" max_length="40" name="u_aspettative" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Cognome utente" max_length="40" name="u_cognome_review" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Contro" max_length="40" name="u_contro" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Data review" mandatory="true" max_length="40" name="u_data_review" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Lingua review" max_length="40" name="u_lingua" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Italiano" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="English" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Francaise" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="Altra" sequence="3" value="4"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Email annuncio" max_length="40" name="u_mail_organizzatore" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Nome utente" max_length="40" name="u_nome_review" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Pro" max_length="40" name="u_pro" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Stelle" max_length="40" name="u_stelle" type="string">
+            <choice>
+                <element inactive_on_update="false" label="1 stella" sequence="0" value="1 stella"/>
+                <element inactive_on_update="false" label="2 stelle" sequence="1" value="2 stelle"/>
+                <element inactive_on_update="false" label="3 stelle" sequence="2" value="3 stelle"/>
+                <element inactive_on_update="false" label="4 stelle" sequence="3" value="4 stelle"/>
+                <element inactive_on_update="false" label="5 stelle" sequence="4" value="5 stelle"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Testo review" max_length="40" name="u_testo" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Titolo review" max_length="40" name="u_titolo_review" type="string"/>
+        <element attributes="encode_utf8=false" label="ID utente" max_length="32" name="u_utente_review" reference="x_579842_bacheca_utente" type="reference"/>
+        <index name="index">
+            <element name="u_utente_review"/>
+        </index>
+        <index name="index2">
+            <element name="u_annuncio"/>
+        </index>
+    </element>
+</database>

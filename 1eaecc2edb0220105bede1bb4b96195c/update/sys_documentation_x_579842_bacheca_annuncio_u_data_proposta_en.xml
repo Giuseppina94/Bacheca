@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_data_proposta" label="Data proposta" language="en" table="x_579842_bacheca_annuncio">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_data_proposta</element>
+            <help/>
+            <hint/>
+            <label>Data proposta</label>
+            <language>en</language>
+            <name>x_579842_bacheca_annuncio</name>
+            <plural>Data propostas</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-02-03 09:48:07</sys_created_on>
+            <sys_id>29ca9c66db4220105bede1bb4b961955</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Data proposta</sys_name>
+            <sys_package display_value="Bacheca" source="x_579842_bacheca">1eaecc2edb0220105bede1bb4b96195c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Bacheca">1eaecc2edb0220105bede1bb4b96195c</sys_scope>
+            <sys_update_name>sys_documentation_x_579842_bacheca_annuncio_u_data_proposta_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-02-03 09:48:07</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

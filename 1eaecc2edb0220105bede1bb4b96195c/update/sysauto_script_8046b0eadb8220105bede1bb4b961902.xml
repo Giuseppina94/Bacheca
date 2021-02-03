@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time>1970-01-01 00:00:00</entered_time>
+        <name>Set stato proposta</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2021-02-03 11:48:10</run_start>
+        <run_time>1970-01-01 08:00:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[var setnotapproved = gs.getProperty('x_579842_bacheca.SetNotApproved');
+
+//definisco una tabella con tutti i record
+var annuncio = new GlideRecord('x_579842_bacheca_annuncio');
+
+annuncio.addQuery('tipologia_annuncio','=',3);
+annuncio.addQuery('u_data_proposta','<=',gs.daysAgo(setnotapproved));
+annuncio.addQuery('u_stato_della_proposta','=',2);
+annuncio.query();
+
+while (annuncio.next()) {
+		annuncio.u_stato_della_proposta = 3;
+		annuncio.update();	
+	}
+
+// var setNotApproved=gs.getProperty('x_579842_bacheca.SetNotApproved');
+// var scadenza = new GlideDateTime();
+// scadenza.addDaysLocalTime(-setNotApproved);
+// //definisco una tabella con tutti i record
+// var annuncio = new GlideRecord('x_579842_bacheca_annuncio');
+
+// annuncio.addQuery('tipologia_annuncio','=',3);
+// annuncio.addQuery('u_stato_proposta','=',2);
+// annuncio.query();
+
+// while (annuncio.next()) {
+//   var data = annuncio.u_data_proposta;
+//   if(scadenza > data){
+//     annuncio.u_stato_proposta = 3;
+//     annuncio.update();
+//   }  
+//   }]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-02-03 11:49:26</sys_created_on>
+        <sys_id>8046b0eadb8220105bede1bb4b961902</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Set stato proposta</sys_name>
+        <sys_package display_value="Bacheca" source="x_579842_bacheca">1eaecc2edb0220105bede1bb4b96195c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bacheca">1eaecc2edb0220105bede1bb4b96195c</sys_scope>
+        <sys_update_name>sysauto_script_8046b0eadb8220105bede1bb4b961902</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-02-03 11:49:26</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

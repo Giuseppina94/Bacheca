@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_sesso" table="x_579842_bacheca_utente" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_sesso</element>
+            <name>x_579842_bacheca_utente</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-02-03 09:21:56</sys_created_on>
+            <sys_id>0ac4d462db4220105bede1bb4b96198c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_sesso</sys_name>
+            <sys_package display_value="Bacheca" source="x_579842_bacheca">1eaecc2edb0220105bede1bb4b96195c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Bacheca">1eaecc2edb0220105bede1bb4b96195c</sys_scope>
+            <sys_update_name>sys_choice_x_579842_bacheca_utente_u_sesso</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-02-03 09:21:56</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_sesso</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Maschio</label>
+            <language>en</language>
+            <name>x_579842_bacheca_utente</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-02-03 09:21:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cec4d462db4220105bede1bb4b96198b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-02-03 09:21:56</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_sesso</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Femmina</label>
+            <language>en</language>
+            <name>x_579842_bacheca_utente</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-02-03 09:21:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4ec4d462db4220105bede1bb4b96198d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-02-03 09:21:56</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

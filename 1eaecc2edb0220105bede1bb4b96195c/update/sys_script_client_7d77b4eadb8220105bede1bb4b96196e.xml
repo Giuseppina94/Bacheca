@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Autofill del campo nome e cognome utente che compila il commento</description>
+        <field>u_utente</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Autofill utente commento</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '' || newValue == oldValue) {
+      return;
+   }
+  
+  var getNome = new GlideAjax('getUtente');
+  getNome.addParam('sysparm_name','getNome');
+  getNome.addParam('sysparm_number',g_form.getValue('u_utente'));
+  getNome.getXML(popolateNomeField);
+  
+  var getCognome = new GlideAjax('getUtente');
+  getCognome.addParam('sysparm_name','getCognome');
+  getCognome.addParam('sysparm_number',g_form.getValue('u_utente'));
+  getCognome.getXML(populateCognomeField);
+  
+  
+  function popolateNomeField(response){
+    var nomeFromScriptInclude = response.responseXML.documentElement.getAttribute('answer');
+    g_form.clearValue('u_nome_utente');
+    g_form.setValue('u_nome_utente',nomeFromScriptInclude);
+  }
+  
+  function populateCognomeField(response){
+    var cognomeFromScriptInclude = response.responseXML.documentElement.getAttribute('answer');
+    g_form.clearValue('u_cognome_utente');
+    g_form.setValue('u_cognome_utente',cognomeFromScriptInclude);
+  }
+  
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-02-03 11:54:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7d77b4eadb8220105bede1bb4b96196e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Autofill utente commento</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Bacheca" source="x_579842_bacheca">1eaecc2edb0220105bede1bb4b96195c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bacheca">1eaecc2edb0220105bede1bb4b96195c</sys_scope>
+        <sys_update_name>sys_script_client_7d77b4eadb8220105bede1bb4b96196e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-02-03 11:54:25</sys_updated_on>
+        <table>x_579842_bacheca_commento</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

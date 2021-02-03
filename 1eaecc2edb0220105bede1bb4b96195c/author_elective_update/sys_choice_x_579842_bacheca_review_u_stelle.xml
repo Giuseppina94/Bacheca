@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_stelle" table="x_579842_bacheca_review" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_stelle</element>
+            <name>x_579842_bacheca_review</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-02-03 11:22:16</sys_created_on>
+            <sys_id>a450f4a6db8220105bede1bb4b96195d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_stelle</sys_name>
+            <sys_package display_value="Bacheca" source="x_579842_bacheca">1eaecc2edb0220105bede1bb4b96195c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Bacheca">1eaecc2edb0220105bede1bb4b96195c</sys_scope>
+            <sys_update_name>sys_choice_x_579842_bacheca_review_u_stelle</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-02-03 11:22:16</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_stelle</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>1 stella</label>
+            <language>en</language>
+            <name>x_579842_bacheca_review</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-02-03 11:22:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6c50f4a6db8220105bede1bb4b96195c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-02-03 11:22:16</sys_updated_on>
+            <value>1 stella</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_stelle</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>2 stelle</label>
+            <language>en</language>
+            <name>x_579842_bacheca_review</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-02-03 11:22:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a050f4a6db8220105bede1bb4b96195e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-02-03 11:22:16</sys_updated_on>
+            <value>2 stelle</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_stelle</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>3 stelle</label>
+            <language>en</language>
+            <name>x_579842_bacheca_review</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-02-03 11:22:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2450f4a6db8220105bede1bb4b96195f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-02-03 11:22:16</sys_updated_on>
+            <value>3 stelle</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_stelle</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>4 stelle</label>
+            <language>en</language>
+            <name>x_579842_bacheca_review</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-02-03 11:22:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a450f4a6db8220105bede1bb4b961960</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-02-03 11:22:16</sys_updated_on>
+            <value>4 stelle</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_stelle</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>5 stelle</label>
+            <language>en</language>
+            <name>x_579842_bacheca_review</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-02-03 11:22:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2850f4a6db8220105bede1bb4b961961</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-02-03 11:22:16</sys_updated_on>
+            <value>5 stelle</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>
