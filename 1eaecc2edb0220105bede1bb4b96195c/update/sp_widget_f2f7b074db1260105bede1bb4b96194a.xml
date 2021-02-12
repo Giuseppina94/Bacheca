@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>h3{
+  Font-size: 40px;
+color: #099999;
+  font-weight:bold;
+}
+h4.list-group-item-heading{
+color: #099999;
+}
+
+
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>review</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Review</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+  data.review = []; /*data notes è una lista vuota */
+	var reviewRecord = new GlideRecord('x_579842_bacheca_review');
+	reviewRecord.query();
+	
+	while (reviewRecord.next()){
+		var reviewObj = {}; /*oggetto vuoto*/
+		
+		/*usiamo Service portal helper per copiare 
+		all'interno dell'oggetto noteObj il valore dei campi 
+		number, title, sys_id del record noteRecord*/
+		$sp.getRecordDisplayValues(reviewObj,reviewRecord, 'number,u_annuncio,u_mail_organizzatore, u_data_review,u_utente_review,u_nome_review,u_cognome_review,u_titolo_review,u_testo,u_lingua, u_altra_lingua, u_pro, u_contro,u_aspettative, u_stelle');
+	
+		/*riempiamo data.notes*/
+		data.review.push(reviewObj);
+	}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-02-10 11:42:04</sys_created_on>
+        <sys_id>f2f7b074db1260105bede1bb4b96194a</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Review</sys_name>
+        <sys_package display_value="Bacheca" source="x_579842_bacheca">1eaecc2edb0220105bede1bb4b96195c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bacheca">1eaecc2edb0220105bede1bb4b96195c</sys_scope>
+        <sys_update_name>sp_widget_f2f7b074db1260105bede1bb4b96194a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-02-11 16:34:07</sys_updated_on>
+        <template><![CDATA[
+<div>
+<div class = "panel panel-default">
+  <div class = "panel-heading clearfix">
+    <h3 class = "panel-title pull-left">
+      ${Review}
+    </h3>
+  </div>
+  <div style = "width:550px;height:400px;overflow-y:scroll;">
+  <div class = "list-group">
+    <a class = "list-group-item" ng-repeat = "review in data.review">
+    <h4 class = "list-group-item-heading">
+      Titolo: {{review.u_titolo_review}}
+      
+      </h4>
+       
+      <p class = "list-group-item-text">
+       Data review: {{review.u_data_review}}
+      </p>
+       <p class = "list-group-item-text">
+       Annuncio: {{review.u_annuncio}} {{review.u_mail_organizzatore}}
+      </p>
+       <p class = "list-group-item-text">
+        Utente: {{review.u_utente}} {{review.u_nome_review}} {{review.u_cognome_review}} 
+      </p>
+       <p class = "list-group-item-text">
+       Testo: {{review.u_testo}}
+      </p>
+       <p class = "list-group-item-text">
+       Lingua: {{review.u_lingua}} {{review.u_altra_lingua}}
+      </p>
+       <p class = "list-group-item-text">
+       Pro: {{review.u_pro}} 
+      </p>
+      <p>
+        Contro: {{review.u_contro}}
+      </p>
+      
+      <p class = "list-group-item-text">
+       Stelle: {{review.u_stelle}} 
+      </p>
+    </a>
+  </div>
+  </div>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

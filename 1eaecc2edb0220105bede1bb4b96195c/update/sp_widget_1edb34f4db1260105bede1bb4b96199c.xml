@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>h3{
+  Font-size: 40px;
+color: #099999;
+  font-weight:bold;
+}
+h4.list-group-item-heading{
+color: #099999;
+}
+
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>annn</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Annn</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+data.attivita = []; /*data annuncio è una lista vuota */
+	var attivitaRecord = new GlideRecord('x_579842_bacheca_annuncio');
+	attivitaRecord.addQuery('tipologia_annuncio','=','1');
+	attivitaRecord.query();
+	
+	while (attivitaRecord.next()){
+		var attivitaObj = {}; /*oggetto vuoto*/
+			$sp.getRecordDisplayValues(attivitaObj,attivitaRecord, 'tipologia_annuncio,u_utente_annuncio,u_email_utente,u_tipologia_attivit,u_atra_attivit,u_loc_weekend,u_localita_gita,u_numero_giorni_gita,u_data_conferma,u_quota_partecipativa,u_quota,u_numero_massimo_partecipanti,u_porta_un_amico,u_attivita_ann,umotivo_ann_attivita');
+		attivitaObj.data_att=attivitaRecord.getValue('u_data_attivita');
+		/*riempiamo data.notes*/
+		data.attivita.push(attivitaObj);
+	}
+	
+	data.evento = []; //data annuncio è una lista vuota 
+	var eventoRecord = new GlideRecord('x_579842_bacheca_annuncio');
+	
+	eventoRecord.addQuery('tipologia_annuncio','=','2');
+	eventoRecord.query();
+	
+	while (eventoRecord.next()){
+		var eventoObj = {}; //oggetto vuoto
+			$sp.getRecordDisplayValues(eventoObj,eventoRecord, 'tipologia_annuncio,u_utente_annuncio,u_email_utente,u_nome_evento,u_tipologia_evento,u_altro,u_evento_all_aperto,u_luogo_evento,u_evento_annullato,u_motivazione_ann');
+	
+	 		eventoObj.data_eve=eventoRecord.getValue('u_data_evento');
+		
+		//riempiamo data.notes
+		data.evento.push(eventoObj);
+	
+}
+	
+	data.prop = []; //data annuncio è una lista vuota 
+	var propRecord = new GlideRecord('x_579842_bacheca_annuncio');
+	
+	propRecord.addQuery('tipologia_annuncio','=','3');
+	propRecord.query();
+	
+	while (propRecord.next()){
+		var propObj = {}; //oggetto vuoto
+			$sp.getRecordDisplayValues(propObj,propRecord, 'tipologia_annuncio,u_utente_annuncio,u_email_utente, u_tipologia_proposta, u_altra_proposta, u_descrizione,u_outsourcing,u_azienda_esterna, u_stato_della_proposta');
+	
+	 		propObj.data_prop=propRecord.getValue('u_data_proposta');
+		
+		//riempiamo data.notes
+		data.prop.push(propObj);
+	
+}
+	})();
+
+  ]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-02-10 11:58:58</sys_created_on>
+        <sys_id>1edb34f4db1260105bede1bb4b96199c</sys_id>
+        <sys_mod_count>107</sys_mod_count>
+        <sys_name>Annn</sys_name>
+        <sys_package display_value="Bacheca" source="x_579842_bacheca">1eaecc2edb0220105bede1bb4b96195c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bacheca">1eaecc2edb0220105bede1bb4b96195c</sys_scope>
+        <sys_update_name>sp_widget_1edb34f4db1260105bede1bb4b96199c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-02-12 09:53:21</sys_updated_on>
+        <template><![CDATA[<div>
+
+  <div class = "panel panel-default">
+  <div class = "panel-heading clearfix">
+    <h3 class = "panel-title pull-left">
+      ${Lista annunci}
+    </h3>
+  </div>
+ <div style = "width:550px;height:400px;overflow-y:scroll;">
+   
+    
+    <div class = "list-group">
+    <a class = "list-group-item" ng-repeat = "attivita in data.attivita">
+    <h4 class = "list-group-item-heading">
+      {{attivita.tipologia_annuncio}}
+      
+      </h4>
+      <p class = "list-group-item-text">
+       ${Tipo attività:} {{attivita.u_tipologia_attivit}} {{attivita.u_altra_attivit}}
+      </p>
+      
+       <p class = "list-group-item-text">
+  	${Data attività:}	{{attivita.data_att}} 
+      </p>
+      <p class = "list-group-item-text">
+    ${Data conferma:} {{attivita.u_data_conferma}} 
+      </p>
+       <p class = "list-group-item-text">
+       ${Utente annuncio:} {{attivita.u_utente_annuncio}}   {{attivita.u_email_utente}}
+      </p>
+     
+    </a>
+    
+    
+  <div class = "list-group">
+    <a class = "list-group-item" ng-repeat = "evento in data.evento">
+    <h4 class = "list-group-item-heading">
+      {{evento.tipologia_annuncio}}
+      </h4>
+       <p class = "list-group-item-text">
+       ${Evento:}  {{evento.u_nome_evento}}   {{evento.u_tipologia_evento}} {{evento.u_altro}}
+      </p>
+        <p class = "list-group-item-text">
+  		${Data evento:} {{evento.data_eve}}
+      </p>
+      <p class = "list-group-item-text">
+      ${Utente annuncio:}  {{evento.u_utente_annuncio}}   {{evento.u_email_utente}}
+      </p>
+     
+    </a>
+  
+  
+  <div class = "list-group">
+    <a class = "list-group-item" ng-repeat = "proposta in data.prop">
+    <h4 class = "list-group-item-heading">
+      {{proposta.tipologia_annuncio}}
+      
+      </h4>
+      <p class = "list-group-item-text">
+       ${Proposta:}  {{proposta.u_tipologia_proposta}} {{proposta.u_altra_proposta}} 
+        {{proposta.u_descrizione}}
+
+      </p>
+      <p class = "list-group-item-text">
+  		${Data proposta:} {{proposta.data_prop}}
+      </p>
+      <p class = "list-group-item-text">
+       ${Utente:}  {{proposta.u_utente_annuncio}}   {{proposta.u_email_utente}}
+      </p>
+      
+       <p class = "list-group-item-text">
+        Stato della proposta: {{proposta.u_stato_della_proposta}} 
+      </p>
+      
+    </a>
+    
+  </div>]]></template>
+    </sp_widget>
+</record_update>

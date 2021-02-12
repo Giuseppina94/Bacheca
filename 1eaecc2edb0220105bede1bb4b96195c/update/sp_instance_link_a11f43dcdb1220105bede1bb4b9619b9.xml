@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_link">
+    <sp_instance_link action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>primary</color>
+        <css/>
+        <glyph>tags</glyph>
+        <id/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <order>1</order>
+        <roles/>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description>Scrivi un nuovo annuncio</short_description>
+        <size>md</size>
+        <sp_column display_value="2">1050d710db5220105bede1bb4b9619be</sp_column>
+        <sp_page/>
+        <sp_widget display_value="Icon Link">3caa67afcb13020000f8d856634c9c2e</sp_widget>
+        <sys_class_name>sp_instance_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-02-09 09:25:18</sys_created_on>
+        <sys_id>a11f43dcdb1220105bede1bb4b9619b9</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Crea un nuovo annuncio</sys_name>
+        <sys_package display_value="Bacheca" source="x_579842_bacheca">1eaecc2edb0220105bede1bb4b96195c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bacheca">1eaecc2edb0220105bede1bb4b96195c</sys_scope>
+        <sys_update_name>sp_instance_link_a11f43dcdb1220105bede1bb4b9619b9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-02-09 09:35:38</sys_updated_on>
+        <title>Crea un nuovo annuncio</title>
+        <type>url</type>
+        <url>https://dev75018.service-now.com/nav_to.do?uri=%2Fx_579842_bacheca_annuncio.do%3Fsys_id%3D-1%26sysparm_stack%3Dx_579842_bacheca_annuncio_list.do</url>
+        <widget_parameters><![CDATA[{
+	"link_template": {
+		"value": "Top Icon",
+		"displayValue": "Top Icon"
+	}
+}]]></widget_parameters>
+    </sp_instance_link>
+    <sys_translated_text action="delete_multiple" query="documentkey=a11f43dcdb1220105bede1bb4b9619b9"/>
+</record_update>

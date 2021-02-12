@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>h3{
+  Font-size: 40px;
+color: #099999;
+  font-weight:bold;
+}
+h4.list-group-item-heading{
+color: #099999;
+}
+
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>commento</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Commento</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+  data.commenti = []; /*data notes è una lista vuota */
+	var commentiRecord = new GlideRecord('x_579842_bacheca_commento');
+	commentiRecord.query();
+	
+	while (commentiRecord.next()){
+		var commentiObj = {}; /*oggetto vuoto*/
+		
+		/*usiamo Service portal helper per copiare 
+		all'interno dell'oggetto noteObj il valore dei campi 
+		number, title, sys_id del record noteRecord*/
+		$sp.getRecordDisplayValues(commentiObj,commentiRecord, 'number,u_annuncio,u_mail_organizzatore, u_data_commento,u_utente,u_nome_utente,u_cognome_utente,u_titolo,u_testo,u_suggerimenti');
+	
+		/*riempiamo data.notes*/
+		data.commenti.push(commentiObj);
+	}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-02-10 11:13:33</sys_created_on>
+        <sys_id>cd71b0fcdbde20105bede1bb4b9619ad</sys_id>
+        <sys_mod_count>35</sys_mod_count>
+        <sys_name>Commento</sys_name>
+        <sys_package display_value="Bacheca" source="x_579842_bacheca">1eaecc2edb0220105bede1bb4b96195c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bacheca">1eaecc2edb0220105bede1bb4b96195c</sys_scope>
+        <sys_update_name>sp_widget_cd71b0fcdbde20105bede1bb4b9619ad</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-02-11 16:41:03</sys_updated_on>
+        <template><![CDATA[
+<div>
+<div class = "panel panel-default">
+  <div class = "panel-heading clearfix">
+    <h3 class = "panel-title pull-left">
+      ${Commenti}
+    </h3>
+  </div>
+  <div style = "width:550px;height:400px;overflow-y:scroll;">
+  <div class = "list-group">
+    <a class = "list-group-item" ng-repeat = "commenti in data.commenti">
+    <h4 class = "list-group-item-heading">
+      {{commenti.u_titolo}}
+      
+      </h4>
+      
+      <p class = "list-group-item-text">
+        
+       Commento: {{commenti.number}}  
+        
+      </p>
+      <p>
+        Data commento: {{commenti.u_data_commento}}
+      </p>
+       <p class = "list-group-item-text">
+        Annuncio: {{commenti.u_annuncio}} {{commenti.u_mail_organizzatore}}
+      </p>
+       <p class = "list-group-item-text">
+        Utente: {{commenti.u_utente}} {{commenti.u_nome_utente}} {{commenti.u_cognome_utente}} 
+      </p>
+       <p class = "list-group-item-text">
+        Testo Commento: {{commenti.u_testo}}
+      </p>
+       <p class = "list-group-item-text">
+       Suggerimenti: {{commenti.u_suggerimenti}}
+      </p>
+    </a>
+  </div>
+  </div>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

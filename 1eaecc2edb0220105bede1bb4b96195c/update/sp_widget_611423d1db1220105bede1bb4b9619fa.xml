@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>annuncio_e_commento_e_review</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Annuncio e commento e review</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+data.annunci = []; /*data notes è una lista vuota */
+	var annuncioRecord = new GlideRecord('x_579842_bacheca_annuncio');
+	
+	annuncioRecord.orderByDesc('created');
+	annuncioRecord.query();
+	
+	while (annuncioRecord.next()){
+		var annuncioObj = {}; /*oggetto vuoto*/
+		
+		/*usiamo Service portal helper per copiare 
+		all'interno dell'oggetto noteObj il valore dei campi 
+		number, title, sys_id del record noteRecord*/
+		var annuncioAttributes = "number, tipologia_annuncio, u_utente_annuncio, u_email_utente, u_tipologia_attivit,u_altra_attivit,u_data_attivita, u_loc_weekend, u_localita_gita, u_numero_giorni_gita, u_data_conferma, u_quota_partecipativa, u_quota, u_numero_massimo_partecipanti, u_porta_un_amico, u_attivita_ann, umotivo_ann_attivita, u_nome_evento, u_data_evento, u_tipologia_evento, u_altro, u_evento_all_aperto, u_luogo_evento, u_evento_annullato, u_motivazione_ann, u_tipologia_proposta, u_altra_proposta, u_data_proposta, u_descrizione, u_outsourcing,u_azienda_esterna,u_stato_della_proposta";
+		$sp.getRecordDisplayValues(annuncioObj,annuncioRecord,annuncioAttributes);
+		
+		/*posso anche manualmente inserire dei campi*/
+		//noteObj.note=noteRecord.getValue('note').slice(0,20);
+		
+		/*posso selezionare solo i primi 20 caratteri della nota
+		Slice seleziona dal carattere 0 al carattere 20*/
+	
+		//retrieve tutti i commenti dell'annuncio corrente
+	var commenti = [];
+		var commentoRecord = new GlideRecord('x_579842_bacheca_commento');
+		commentoRecord.addQuery('u_annuncio','=',annuncioRecord.getUniqueValue());
+		commentoRecord.query();
+		
+		while (commentoRecord.next){
+			var commentoObj={};
+			var commentoAttributes="number,u_annuncio,u_mail_organizzatore, u_data_commento,u_utente,u_nome_utente,u_cognome_utente,u_titolo,u_testo,u_suggerimenti";
+			$sp.getRecordDisplayValues(commentoObj,commentoRecord,commentoAttributes);
+			commenti.push(commentoObj);	
+		}
+		annuncioObj.commenti=commenti;
+		/*riempiamo data.notes*/
+		data.annunci.push(annuncioObj);
+	}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-02-12 13:30:58</sys_created_on>
+        <sys_id>611423d1db1220105bede1bb4b9619fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Annuncio e commento e review</sys_name>
+        <sys_package display_value="Bacheca" source="x_579842_bacheca">1eaecc2edb0220105bede1bb4b96195c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bacheca">1eaecc2edb0220105bede1bb4b96195c</sys_scope>
+        <sys_update_name>sp_widget_611423d1db1220105bede1bb4b9619fa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-02-12 13:30:58</sys_updated_on>
+        <template><![CDATA[<div>
+<label for="annunci"> Seleziona un annuncio:</label>
+<!--<select name="annunci" id="annunci" >
+  <option ng-repeat = "annuncio in data.annunci" value="annuncio.number">{{annuncio.number}}</option>
+</select>-->
+  <select ng-options="annuncio.number for annuncio in data.annunci track by annuncio.number" ng-model="selected">
+    <option value=""> --Choose--</option>
+</select>
+  <div ng-if="selected">
+    Annuncio:
+    
+  </div>
+  <div ng-if="selected"> 
+       Tipologia annuncio: {{selected.tipologia_annuncio}} 
+      </div>
+  <div ng-if="selected">
+        Utente annuncio: {{selected.u_utente_annuncio}}   {{selected.u_email_utente}}
+      </div>
+      <div ng-if="selected.tipologia_annuncio=='Organizzazione evento aziendale'" id="aziendale">
+        <h3>
+          Dettagli annuncio evento aziendale
+        </h3>
+        <div>
+          
+        </div>
+  </div>
+      <div ng-if="selected.tipologia_annuncio=='Organizzazione attività informale'" id="informale">
+        <h3>
+          Dettagli annuncio attività informale
+        </h3>
+        <div>
+          Tipologia attività: {{selected.u_tipologia_attivita}}
+        </div>
+        <div ng-if="u_tipologia_attivita=='altro'" id="altro">
+          Altra attività: {{u_altra_attivit}}
+        </div>
+        <div>
+          Data attività: {{u_data_attivita}}
+        </div>
+        <div ng-if="u_tipologia_attivita=='weekend'" id="weekend">
+          Località weekend: {{u_loc_weekend}}
+        </div>
+         <div ng-if="u_tipologia_attivita=='gita'" id="gita">
+          Località gita:
+        </div>
+  </div>
+  <div ng-if="selected.tipologia_annuncio=='Proposta miglioramento lavoro'" id="proposta">
+        <h3>
+          Dettagli annuncio attività informale
+        </h3>
+        <div>
+          
+        </div>
+    Commenti:
+    <div ng-repeat="commento in selected.commenti">
+      {{Commento.u_testo}}
+      
+    </div>
+  </div>
+       
+</div>]]></template>
+    </sp_widget>
+</record_update>

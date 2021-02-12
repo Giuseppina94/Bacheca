@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[
+function ($scope, $element, $window, $location, $rootScope, $timeout, snAttachmentHandler, $http, spUtil, userPreferences, $filter, i18n, $uibModal) {
+
+ // Many of these fields are more configuration-type fields than profile fields. We still want to display
+ // these to a user who is configuring their 'settings', but we shouldn't show them on a user profile page.
+ // We need to handle this better.
+ var fieldExcludes = {
+  sys_user: ['name', 'introduction', 'title', 'department', 'location', 'photo',
+        'manager', 'company'],
+  live_profile: ['short_description', 'photo']
+ }
+ $scope.uploadNewProfilePicture = function($event) {
+  $event.stopPropagation();
+  if($event.keyCode === 9) {
+   return;
+  }
+  var $el = $element.find('input[type=file]');
+  $el.click();
+ }
+ $scope.attachFiles = function(files) {
+  var file = files.files[0];
+  var validImage = false;
+  switch(file.type) {
+   case 'image/jpeg':
+   case 'image/png':
+   case 'image/bmp':
+   case 'image/x-windows-bmp':
+   case 'image/gif':
+   case 'image/x-icon':
+   case 'image/svg+xml':
+    validImage = true;
+    break;
+   default:
+    break;
+  }
+  if(!validImage) {
+   alert(file.name + " " + i18n.getMessage("isn't a recognized image file format"));
+   return;
+  }
+  snAttachmentHandler.create("live_profile", $scope.data.liveProfileID).uploadAttachment(file, {
+   sysparm_fieldname: "photo"
+  }).then(function(response) {
+   var obj = {};
+   obj.newAvatarId = response.sys_id;
+   $scope.avatarPicture = {
+    'background-image': "url('" + response.sys_id + ".iix')",
+    'color': 'transparent'
+   };
+   $rootScope.$broadcast("sp.avatar_changed", obj);
+  });
+ }
+ $scope.avatarPicture = "";
+ $http.get('/api/now/live/profiles/sys_user.' + $scope.data.sysUserID).then(function (response) {
+  if (response.data.result && response.data.result.avatar){
+   var avatarPicture = response.data.result.avatar.replace("?t=small", "");
+   $scope.avatarPicture = {
+    'background-image': "url('" + avatarPicture + "')",
+    'color': 'transparent'
+   };
+  }
+ }); 
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.panel-defaul{
+background: #099999;
+}
+h3{
+  font-weight: bold;
+  Font-size: 40px;
+  color: #1F8476;
+}
+h4.list-group-item-heading{
+color: #1F8476;
+
+}
+
+
+function ($scope, $element, $window, $location, $rootScope, $timeout, snAttachmentHandler, $http, spUtil, userPreferences, $filter, i18n, $uibModal) {
+
+$scope.avatarPicture = "";
+
+	$http.get('/api/now/live/profiles/sys_user.' + $scope.data.sysUserID).then(function (response) {
+		if (response.data.result &amp;&amp; response.data.result.avatar){
+			var avatarPicture = response.data.result.avatar.replace("?t=small", "");
+			$scope.avatarPicture = {
+				'background-image': "url('" + avatarPicture + "')",
+				'color': 'transparent'
+			};
+		}
+	});</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>utente_bacheca</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Utente bacheca</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /*creo una lista vuota che dopo riempio*/
+	data.utente=[];
+	
+	/*recupero gli utenti di sistema*/
+	var user = gs.getUser();
+	var information = {}; /*oggetto vuoto*/
+	information.nome = user.getFirstName();
+	information.cognome = user.getLastName();
+	information.email = user.getEmail();
+	
+	information.roles = user.getUserRoles().toString().split(',');
+	
+/*toString fa diventare i ruoli come delle stringhe perchè
+getUserRoles non ritorna stringhe ma oggetti*/
+	/*split serve a dividere i ruoli con la virgola*/
+	
+	data.sysUserID = gs.getUser().getID();
+
+var sysUserGR = new GlideRecord("sys_user");
+data.userExists = sysUserGR.get(data.sysUserID) && sysUserGR.canRead();
+ var loggedInSysUserID = gs.getUser().getID();
+ data.liveProfileID = "";
+	
+
+	data.utente.push(information);
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-02-10 08:27:17</sys_created_on>
+        <sys_id>ed6bccf0db9e20105bede1bb4b9619c1</sys_id>
+        <sys_mod_count>68</sys_mod_count>
+        <sys_name>Utente bacheca</sys_name>
+        <sys_package display_value="Bacheca" source="x_579842_bacheca">1eaecc2edb0220105bede1bb4b96195c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bacheca">1eaecc2edb0220105bede1bb4b96195c</sys_scope>
+        <sys_update_name>sp_widget_ed6bccf0db9e20105bede1bb4b9619c1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-02-11 16:40:25</sys_updated_on>
+        <template><![CDATA[<div class="panel panel-default">
+  <!-- heading -->
+  <div class = "panel-heading">
+    <h3 class="panel-title"> 
+      ${Informazioni utente loggato}
+    </h3>
+  </div>
+  
+<!-- cosa metto dentro il widget -->
+  <div class = "list-group">
+   <!-- <div class = "panel-body">
+    <user-information> </user-information>  <div class="sub-avatar mia" ng-style="avatarPicture"></div>-->
+    
+    <a class = "list-group-item" ng-repeat = "utente in data.utente">
+    <h4 class = "list-group-item-heading">
+     
+     Utente: {{utente.nome}} {{utente.cognome}}
+      
+      </h4>
+      <p class = "list-group-item-text">
+        
+  		Email utente: {{utente.email}}
+      
+     </p>
+      <p>
+       Ruolo utente: {{utente.roles}}
+      </p>
+       
+    </a>
+    <div>
+          
+      </div>
+  </div>
+ <div class="default-focus-outline">
+  <div class="panel-body">
+    <div class="col-xs-12 col-sm-4 text-center">        
+      <div class="avatar-extra-large avatar-container" style="cursor:default;">
+        <div class="avatar soloAvatar bottom">
+          <div class="sub-avatar mia" ng-style="avatarPicture"><i class="fa fa-user"></i></div>
+        </div>          
+      </div>          
+      <!-- file upload -->
+      <span ng-if="::data.isLoggedInUsersProfile">
+        <input ng-show="false" type="file" accept="image/jpeg,image/png,image/bmp,image/x-windows-bmp,image/gif,image/x-icon,image/svg+xml" ng-file-select="attachFiles({files: $files})" />
+      </span>
+    </div> 
+  </div>
+</div>
+  </div>
+  ]]></template>
+    </sp_widget>
+</record_update>

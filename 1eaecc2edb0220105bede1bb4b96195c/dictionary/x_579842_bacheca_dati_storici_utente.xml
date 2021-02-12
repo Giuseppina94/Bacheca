@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Dati storici utente" max_length="40" name="x_579842_bacheca_dati_storici_utente" sizeclass="0" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Cognome utente" label="Cognome utente" max_length="40" name="u_cognome_utente" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Data di nascita" label="Data di nascita" max_length="40" name="u_data_di_nascita" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Indirizzo mail" label="Indirizzo mail" max_length="40" name="u_indirizzo_mail" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=ï»¿Nome utente" label="ï»¿Nome utente" max_length="40" name="u_ï__nome_utente" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Luogo di nascita" label="Luogo di nascita" max_length="40" name="u_luogo_di_nascita" type="string"/>
+    </element>
+</database>

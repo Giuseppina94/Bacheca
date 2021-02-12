@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="u_data_commento" label="Data del commento" language="en" table="x_579842_bacheca_commento">
+    <sys_documentation element="u_data_commento" label="Data commento" language="en" table="x_579842_bacheca_commento">
         <sys_documentation action="INSERT_OR_UPDATE">
             <element>u_data_commento</element>
             <help/>
             <hint/>
-            <label>Data del commento</label>
+            <label>Data commento</label>
             <language>en</language>
             <name>x_579842_bacheca_commento</name>
-            <plural>Data del commentos</plural>
+            <plural>Data commentos</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-02-03 11:14:10</sys_created_on>
-            <sys_id>ce7eec26db8220105bede1bb4b961958</sys_id>
+            <sys_created_on>2021-02-03 20:23:35</sys_created_on>
+            <sys_id>5a3caa66db0a20105bede1bb4b96192b</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_name>Data del commento</sys_name>
+            <sys_name>Data commento</sys_name>
             <sys_package display_value="Bacheca" source="x_579842_bacheca">1eaecc2edb0220105bede1bb4b96195c</sys_package>
             <sys_policy/>
             <sys_scope display_value="Bacheca">1eaecc2edb0220105bede1bb4b96195c</sys_scope>
             <sys_update_name>sys_documentation_x_579842_bacheca_commento_u_data_commento_en</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-02-03 11:14:10</sys_updated_on>
+            <sys_updated_on>2021-02-03 20:23:35</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

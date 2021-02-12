@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_579842_bacheca.Bacheca user" name="x_579842_bacheca.Bacheca user">301f36d0db1220105bede1bb4b961910</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-02-09 08:15:45</sys_created_on>
+        <sys_id>722f72d0db1220105bede1bb4b96195a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>301f36d0db1220105bede1bb4b961910</sys_name>
+        <sys_package display_value="Bacheca" source="x_579842_bacheca">1eaecc2edb0220105bede1bb4b96195c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bacheca">1eaecc2edb0220105bede1bb4b96195c</sys_scope>
+        <sys_update_name>sys_embedded_help_role_722f72d0db1220105bede1bb4b96195a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-02-09 08:15:45</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

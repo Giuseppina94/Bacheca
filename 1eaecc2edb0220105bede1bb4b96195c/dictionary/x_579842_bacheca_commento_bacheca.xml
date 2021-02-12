@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Commento Bacheca" max_length="40" name="x_579842_bacheca_commento_bacheca" sizeclass="0" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Data commento" label="Data commento" max_length="40" name="u_data_commento" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=ï»¿Annuncio" label="ï»¿Annuncio" max_length="40" name="u_ï__annuncio" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Mail organizzatore evento" label="Mail organizzatore evento" max_length="40" name="u_mail_organizzatore_evento" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Titolo commento" label="Titolo commento" max_length="40" name="u_titolo_commento" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Utente" label="Utente" max_length="40" name="u_utente" type="string"/>
+    </element>
+</database>

@@ -4,55 +4,55 @@
             <element>number</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-02-03 11:14:12</sys_created_on>
-            <sys_id>a67eec26db8220105bede1bb4b9619b4</sys_id>
+            <sys_created_on>2021-02-03 21:26:30</sys_created_on>
+            <sys_id>639ab662db4a20105bede1bb4b9619f6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Commento" display_value="Commento" name="x_579842_bacheca_commento" sys_domain="global" view="Default view">6e0d90e2db4220105bede1bb4b961900</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-02-03 11:14:12</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_data_commento</element>
-            <position>1</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-02-03 11:14:12</sys_created_on>
-            <sys_id>2e7eec26db8220105bede1bb4b9619b4</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Commento" display_value="Commento" name="x_579842_bacheca_commento" sys_domain="global" view="Default view">6e0d90e2db4220105bede1bb4b961900</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-02-03 11:14:12</sys_updated_on>
+            <sys_updated_on>2021-02-03 21:26:30</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_annuncio</element>
-            <position>2</position>
+            <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-02-03 11:14:12</sys_created_on>
-            <sys_id>ae7eec26db8220105bede1bb4b9619b4</sys_id>
+            <sys_created_on>2021-02-03 21:26:30</sys_created_on>
+            <sys_id>f39ab662db4a20105bede1bb4b9619f6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Commento" display_value="Commento" name="x_579842_bacheca_commento" sys_domain="global" view="Default view">6e0d90e2db4220105bede1bb4b961900</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-02-03 11:14:12</sys_updated_on>
+            <sys_updated_on>2021-02-03 21:26:30</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_mail_organizzatore</element>
-            <position>3</position>
+            <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-02-03 11:14:12</sys_created_on>
-            <sys_id>227eec26db8220105bede1bb4b9619b5</sys_id>
+            <sys_created_on>2021-02-03 21:26:30</sys_created_on>
+            <sys_id>779ab662db4a20105bede1bb4b9619f6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Commento" display_value="Commento" name="x_579842_bacheca_commento" sys_domain="global" view="Default view">6e0d90e2db4220105bede1bb4b961900</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-02-03 11:14:12</sys_updated_on>
+            <sys_updated_on>2021-02-03 21:26:30</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_data_commento</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-02-03 21:26:30</sys_created_on>
+            <sys_id>f79ab662db4a20105bede1bb4b9619f6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Commento" display_value="Commento" name="x_579842_bacheca_commento" sys_domain="global" view="Default view">6e0d90e2db4220105bede1bb4b961900</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-02-03 21:26:30</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

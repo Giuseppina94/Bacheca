@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Annuncio" max_length="40" name="x_579842_bacheca_annuncio" sizeclass="0" type="collection">
-        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="ID annuncio" max_length="40" name="number" read_only="true" type="string"/>
+    <element label="Annuncio" max_length="40" name="x_579842_bacheca_annuncio" sizeclass="6" type="collection">
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="ID annuncio" max_length="40" name="number" type="string"/>
         <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Tipologia annuncio" max_length="40" name="tipologia_annuncio" type="choice">
             <choice>
@@ -15,7 +15,7 @@
         <element attributes="edge_encryption_enabled=true" label="Altro" max_length="40" name="u_altro" type="string"/>
         <element label="Attività annullata" max_length="40" name="u_attivita_ann" type="boolean"/>
         <element attributes="edge_encryption_enabled=true" label="Azienda esterna" max_length="40" name="u_azienda_esterna" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Data attività" max_length="40" name="u_data_attivita" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Data attività" max_length="40" name="u_data_attivita" type="glide_date"/>
         <element attributes="edge_encryption_enabled=true" label="Data entro cui dare conferma" max_length="40" name="u_data_conferma" type="glide_date_time"/>
         <element attributes="edge_encryption_enabled=true" label="Data evento" max_length="40" name="u_data_evento" type="glide_date_time"/>
         <element attributes="edge_encryption_enabled=true" label="Data proposta" max_length="40" name="u_data_proposta" type="glide_date_time"/>
@@ -32,7 +32,8 @@
         <element label="Numero massimo partecipanti" max_length="40" name="u_numero_massimo_partecipanti" type="integer"/>
         <element label="Outsourcing" max_length="40" name="u_outsourcing" type="boolean"/>
         <element label="Porta un amico" max_length="40" name="u_porta_un_amico" type="boolean"/>
-        <element label="Quota partecipativa" max_length="40" name="u_quota_partecipativa" type="boolean"/>
+        <element attributes="omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer" label="Quota partecipativa" max_length="20" name="u_quota" type="price"/>
+        <element label="Quota partecipativa?" max_length="40" name="u_quota_partecipativa" type="boolean"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Stato della proposta" max_length="40" name="u_stato_della_proposta" type="string">
             <choice>
                 <element inactive_on_update="false" label="Approvata" sequence="0" value="1"/>
@@ -64,11 +65,15 @@
             </choice>
         </element>
         <element attributes="encode_utf8=false" label="Utente annuncio" max_length="32" name="u_utente_annuncio" reference="x_579842_bacheca_utente" type="reference"/>
+        <element attributes="encode_utf8=false" label="Utente di sistema" max_length="32" name="u_utente_sistema" reference="sys_user" type="reference"/>
         <index name="index">
             <element name="u_utente_annuncio"/>
         </index>
         <index name="index2">
             <element name="sys_class_name"/>
+        </index>
+        <index name="index3">
+            <element name="u_utente_sistema"/>
         </index>
     </element>
 </database>

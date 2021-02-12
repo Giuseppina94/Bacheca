@@ -4,13 +4,13 @@
             <element>u_tipologia_attivit</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-02-03 09:43:16</sys_created_on>
-            <sys_id>aea99066db4220105bede1bb4b961928</sys_id>
+            <sys_created_on>2021-02-03 20:38:38</sys_created_on>
+            <sys_id>2eafaa2adb0a20105bede1bb4b9619c4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Organizzazione attività informale" display_value="Organizzazione attività informale" name="x_579842_bacheca_annuncio" sys_domain="global" view="Default view">42a95066db4220105bede1bb4b961937</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-02-03 09:43:16</sys_updated_on>
+            <sys_updated_on>2021-02-03 20:38:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>u_altra_attivit</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-02-03 09:43:16</sys_created_on>
-            <sys_id>22a99066db4220105bede1bb4b961929</sys_id>
+            <sys_created_on>2021-02-03 20:38:38</sys_created_on>
+            <sys_id>beafaa2adb0a20105bede1bb4b9619c4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Organizzazione attività informale" display_value="Organizzazione attività informale" name="x_579842_bacheca_annuncio" sys_domain="global" view="Default view">42a95066db4220105bede1bb4b961937</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-02-03 09:43:16</sys_updated_on>
+            <sys_updated_on>2021-02-03 20:38:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>u_loc_weekend</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-02-03 09:43:16</sys_created_on>
-            <sys_id>a2a99066db4220105bede1bb4b961929</sys_id>
+            <sys_created_on>2021-02-03 20:38:38</sys_created_on>
+            <sys_id>32afaa2adb0a20105bede1bb4b9619c5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Organizzazione attività informale" display_value="Organizzazione attività informale" name="x_579842_bacheca_annuncio" sys_domain="global" view="Default view">42a95066db4220105bede1bb4b961937</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-02-03 09:43:16</sys_updated_on>
+            <sys_updated_on>2021-02-03 20:38:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>u_localita_gita</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-02-03 09:43:16</sys_created_on>
-            <sys_id>26a99066db4220105bede1bb4b961929</sys_id>
+            <sys_created_on>2021-02-03 20:38:38</sys_created_on>
+            <sys_id>b2afaa2adb0a20105bede1bb4b9619c5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Organizzazione attività informale" display_value="Organizzazione attività informale" name="x_579842_bacheca_annuncio" sys_domain="global" view="Default view">42a95066db4220105bede1bb4b961937</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-02-03 09:43:16</sys_updated_on>
+            <sys_updated_on>2021-02-03 20:38:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>u_numero_giorni_gita</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-02-03 09:43:16</sys_created_on>
-            <sys_id>a6a99066db4220105bede1bb4b961929</sys_id>
+            <sys_created_on>2021-02-03 20:38:38</sys_created_on>
+            <sys_id>36afaa2adb0a20105bede1bb4b9619c5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Organizzazione attività informale" display_value="Organizzazione attività informale" name="x_579842_bacheca_annuncio" sys_domain="global" view="Default view">42a95066db4220105bede1bb4b961937</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-02-03 09:43:16</sys_updated_on>
+            <sys_updated_on>2021-02-03 20:38:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -74,13 +74,13 @@
             <element>u_data_attivita</element>
             <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-02-03 09:43:16</sys_created_on>
-            <sys_id>2aa99066db4220105bede1bb4b961929</sys_id>
+            <sys_created_on>2021-02-03 20:38:38</sys_created_on>
+            <sys_id>b6afaa2adb0a20105bede1bb4b9619c5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Organizzazione attività informale" display_value="Organizzazione attività informale" name="x_579842_bacheca_annuncio" sys_domain="global" view="Default view">42a95066db4220105bede1bb4b961937</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-02-03 09:43:16</sys_updated_on>
+            <sys_updated_on>2021-02-03 20:38:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -88,13 +88,13 @@
             <element>u_data_conferma</element>
             <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-02-03 09:43:16</sys_created_on>
-            <sys_id>aaa99066db4220105bede1bb4b961929</sys_id>
+            <sys_created_on>2021-02-03 20:38:38</sys_created_on>
+            <sys_id>3aafaa2adb0a20105bede1bb4b9619c5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Organizzazione attività informale" display_value="Organizzazione attività informale" name="x_579842_bacheca_annuncio" sys_domain="global" view="Default view">42a95066db4220105bede1bb4b961937</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-02-03 09:43:16</sys_updated_on>
+            <sys_updated_on>2021-02-03 20:38:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -102,27 +102,27 @@
             <element>u_quota_partecipativa</element>
             <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-02-03 09:43:16</sys_created_on>
-            <sys_id>2ea99066db4220105bede1bb4b961929</sys_id>
+            <sys_created_on>2021-02-03 20:38:38</sys_created_on>
+            <sys_id>baafaa2adb0a20105bede1bb4b9619c5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Organizzazione attività informale" display_value="Organizzazione attività informale" name="x_579842_bacheca_annuncio" sys_domain="global" view="Default view">42a95066db4220105bede1bb4b961937</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-02-03 09:43:16</sys_updated_on>
+            <sys_updated_on>2021-02-03 20:38:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_quota_partecipativa</element>
+            <element>u_quota</element>
             <position>8</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-02-03 09:43:16</sys_created_on>
-            <sys_id>aea99066db4220105bede1bb4b961929</sys_id>
+            <sys_created_on>2021-02-03 20:38:38</sys_created_on>
+            <sys_id>3eafaa2adb0a20105bede1bb4b9619c5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Organizzazione attività informale" display_value="Organizzazione attività informale" name="x_579842_bacheca_annuncio" sys_domain="global" view="Default view">42a95066db4220105bede1bb4b961937</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-02-03 09:43:16</sys_updated_on>
+            <sys_updated_on>2021-02-03 20:38:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -130,13 +130,13 @@
             <element>u_numero_massimo_partecipanti</element>
             <position>9</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-02-03 09:43:16</sys_created_on>
-            <sys_id>22a99066db4220105bede1bb4b96192a</sys_id>
+            <sys_created_on>2021-02-03 20:38:38</sys_created_on>
+            <sys_id>beafaa2adb0a20105bede1bb4b9619c5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Organizzazione attività informale" display_value="Organizzazione attività informale" name="x_579842_bacheca_annuncio" sys_domain="global" view="Default view">42a95066db4220105bede1bb4b961937</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-02-03 09:43:16</sys_updated_on>
+            <sys_updated_on>2021-02-03 20:38:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -144,13 +144,13 @@
             <element>u_porta_un_amico</element>
             <position>10</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-02-03 09:43:16</sys_created_on>
-            <sys_id>a2a99066db4220105bede1bb4b96192a</sys_id>
+            <sys_created_on>2021-02-03 20:38:38</sys_created_on>
+            <sys_id>32afaa2adb0a20105bede1bb4b9619c6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Organizzazione attività informale" display_value="Organizzazione attività informale" name="x_579842_bacheca_annuncio" sys_domain="global" view="Default view">42a95066db4220105bede1bb4b961937</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-02-03 09:43:16</sys_updated_on>
+            <sys_updated_on>2021-02-03 20:38:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -158,13 +158,13 @@
             <element>u_attivita_ann</element>
             <position>11</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-02-03 09:43:16</sys_created_on>
-            <sys_id>26a99066db4220105bede1bb4b96192a</sys_id>
+            <sys_created_on>2021-02-03 20:38:38</sys_created_on>
+            <sys_id>b2afaa2adb0a20105bede1bb4b9619c6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Organizzazione attività informale" display_value="Organizzazione attività informale" name="x_579842_bacheca_annuncio" sys_domain="global" view="Default view">42a95066db4220105bede1bb4b961937</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-02-03 09:43:16</sys_updated_on>
+            <sys_updated_on>2021-02-03 20:38:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -172,13 +172,13 @@
             <element>umotivo_ann_attivita</element>
             <position>12</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-02-03 09:43:16</sys_created_on>
-            <sys_id>a6a99066db4220105bede1bb4b96192a</sys_id>
+            <sys_created_on>2021-02-03 20:38:38</sys_created_on>
+            <sys_id>36afaa2adb0a20105bede1bb4b9619c6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Organizzazione attività informale" display_value="Organizzazione attività informale" name="x_579842_bacheca_annuncio" sys_domain="global" view="Default view">42a95066db4220105bede1bb4b961937</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-02-03 09:43:16</sys_updated_on>
+            <sys_updated_on>2021-02-03 20:38:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

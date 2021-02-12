@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Review storiche Bacheca" max_length="40" name="x_579842_bacheca_review_storiche_bacheca" sizeclass="0" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=ï»¿ID annuncio" label="ï»¿ID annuncio" max_length="40" name="u_ï__id_annuncio" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Mail organizzatore evento" label="Mail organizzatore evento" max_length="40" name="u_mail_organizzatore_evento" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Testo" label="Testo" max_length="40" name="u_testo" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Titolo review" label="Titolo review" max_length="40" name="u_titolo_review" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Utente" label="Utente" max_length="40" name="u_utente" type="string"/>
+    </element>
+</database>
